@@ -10,12 +10,13 @@ bottonespesa.addEventListener("click", function () {
     document.getElementById("listaSpesa").innerHTML += '<li id="elementospesa' + (listaSpesa.length - 1) + '"><p>' + inputspesa + '</p> <button type="button" id="elementospesa' + (listaSpesa.length - 1) + '" class="btn btn-outline-secondary">Elimina</button></li>'
     for (let i = 0; i < listaSpesa.length; i++) {
         bottoneEliminatore = document.getElementById("elementospesa" + i);
-        if (bottoneEliminatore){
-        bottoneEliminatore.addEventListener("click", function () {
-            document.getElementById("elementospesa" + i).remove();
+        if (bottoneEliminatore) {
+            bottoneEliminatore.addEventListener("click", function () {
+                document.getElementById("elementospesa" + i).remove();
+            }
+            )
         }
-        )
-    }}
+    }
 })
 
 /* utilizzo un ciclo while
